@@ -25,5 +25,5 @@ variable "key_name" {
 variable "ssh_allowed_ips" {
   description = "List of IPs allowed to SSH into the EC2 instance"
   type        = list(string)
-  default     = ["170.80.236.27/32"] # WARNING: For production, restrict to specific IPs
+  default     = ["0.0.0.0/0"] # WARNING: For production, restrict to specific IPs
 } 
